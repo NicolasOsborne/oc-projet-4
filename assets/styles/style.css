@@ -132,10 +132,10 @@ a {
 }
 
 .fonctionnement-cards-container {
-  margin: 0px 20px 0 20px;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  margin-left: 12px;
 }
 
 .fonctionnement-card {
@@ -194,6 +194,7 @@ a {
 
 .restaurants h2 {
   align-self: flex-start;
+  margin-left: 3px;
 }
 
 .restaurants-cards-container {

@@ -328,6 +328,7 @@ footer {
 
 .banner img {
   height: 275px;
+  width: 100%;
   object-fit: cover;
 }
 

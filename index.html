@@ -16,14 +16,13 @@
 
 <body>
    <header>
-      <div class="header">
-         <img src="assets/images/logo/ohmyfood_logo.svg" class="header-logo" alt="Logo Ohmyfood">
-      </div>
-      <div class="location">
-         <i class="fa-solid fa-location-dot"></i>
-         <span class="location-city">Paris, Belleville</span>
-      </div>
+      <img src="assets/images/logo/ohmyfood_logo.svg" class="header-logo" alt="Logo Ohmyfood">
    </header>
+   <div class="location">
+      <i class="fa-solid fa-location-dot"></i>
+      <span class="location-city">Paris, Belleville</span>
+   </div>
+
    <main>
       <section class="reservation">
          <h1>Réservez le menu qui vous convient</h1>
@@ -32,23 +31,23 @@
       </section>
       <section class="fonctionnement">
          <h2>Fonctionnement</h2>
-         <div class="fonctionnement-cards-container">
-            <div class="fonctionnement-card">
+         <ol class="fonctionnement-cards-container">
+            <li class="fonctionnement-card">
                <span class="fonctionnement-card-number">1</span>
                <i class="fa-solid fa-mobile-screen-button"></i>
                <p class="fonctionnement-card-text">Choisissez un restaurant</p>
-            </div>
-            <div class="fonctionnement-card">
+            </li>
+            <li class="fonctionnement-card">
                <span class="fonctionnement-card-number">2</span>
                <i class="fa-solid fa-list-ul"></i>
                <p class="fonctionnement-card-text">Composez votre menu</p>
-            </div>
-            <div class="fonctionnement-card">
+            </li>
+            <li class="fonctionnement-card">
                <span class="fonctionnement-card-number">3</span>
                <i class="fa-solid fa-store"></i>
                <p class="fonctionnement-card-text">Dégustez au restaurant</p>
-            </div>
-         </div>
+            </li>
+         </ol>
       </section>
       <section class="restaurants">
          <h2>Restaurants</h2>
@@ -126,28 +125,33 @@
          </div>
       </section>
 
-
    </main>
    <footer>
-      <div class="footer-logo">
-         <h2>ohmyfood</h2>
-      </div>
-      <div class="footer-menu">
-         <a href="#">
-            <i class="fa-solid fa-utensils"></i>
-            Proposer un restaurant
-         </a>
-         <a href="#">
-            <i class="fa-solid fa-handshake-angle"></i>
-            Devenir partenaire
-         </a>
-         <a href="#">
-            Mentions légales
-         </a>
-         <a href="#">
-            Contact
-         </a>
-      </div>
+      <h2 class="footer-logo">ohmyfood</h2>
+      <ul class="footer-menu">
+         <li>
+            <a href="#">
+               <i class="fa-solid fa-utensils"></i>
+               Proposer un restaurant
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               <i class="fa-solid fa-handshake-angle"></i>
+               Devenir partenaire
+            </a>
+         </li>
+         <li>
+            <a href="#">
+               Mentions légales
+            </a>
+         </li>
+         <li>
+            <a href="mailto:contact@ohmyfood.com">
+               Contact
+            </a>
+         </li>
+      </ul>
    </footer>
 </body>
 

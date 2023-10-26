@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -33,17 +34,85 @@ a {
   color: inherit;
 }
 
+.banner {
+  width: 100%;
+}
+.banner img {
+  height: 275px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .cta {
   width: 218px;
   height: 50px;
   border-radius: 25px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border: none;
   color: white;
   font-size: 16px;
   font-weight: 500;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.nouveau {
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background: #99e2d0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+}
+
+.restaurant__card {
+  border-radius: 15px;
+  width: 100%;
+  height: 251px;
+  background-color: white;
+}
+.restaurant__card__image {
+  width: 100%;
+  height: 66%;
+  position: relative;
+}
+.restaurant__card__image img {
+  height: 167px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant__card__content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-left: 13px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+.restaurant__card__subtitle p {
+  font-size: 17px;
+}
+.restaurant__card__like {
+  margin-right: 25px;
+  margin-top: 23px;
 }
 
 nav {
@@ -67,79 +136,6 @@ header .fa-arrow-left {
   padding: 14px 89px 13px 89px;
   width: 12.25rem;
   height: 2.25rem;
-}
-
-footer {
-  background-color: #353535;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 22px 25px;
-}
-footer h2 {
-  color: white;
-  font-family: "Shrikhand", serif;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-footer ul {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  align-items: flex-start;
-  color: white;
-  padding-left: 0;
-  list-style: none;
-  font-size: 16px;
-  font-weight: 500;
-}
-footer ul i {
-  font-size: 13px;
-}
-
-.fa-utensils {
-  margin-right: 11px;
-}
-
-.fa-handshake-angle {
-  margin-right: 6px;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 63px;
-  background-color: white;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-header .fa-arrow-left {
-  position: absolute;
-  top: 17px;
-  left: 17px;
-  font-size: 30px;
-}
-
-.header-logo {
-  padding: 14px 89px 13px 89px;
-  width: 12.25rem;
-  height: 2.25rem;
-}
-
-.cta {
-  width: 218px;
-  height: 50px;
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  cursor: pointer;
 }
 
 footer {
@@ -221,14 +217,14 @@ footer ul i {
 .fonctionnement h2 {
   align-self: flex-start;
 }
-.fonctionnement__cards-container {
+.fonctionnement .steps__container {
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-left: 12px;
   padding-left: 0;
 }
-.fonctionnement__card {
+.fonctionnement .step {
   height: 72px;
   width: 100%;
   border-radius: 20px;
@@ -240,7 +236,7 @@ footer ul i {
   align-items: center;
   gap: 22px;
 }
-.fonctionnement__card__number {
+.fonctionnement .step__number {
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -254,7 +250,7 @@ footer ul i {
   position: relative;
   left: -12px;
 }
-.fonctionnement__card__text {
+.fonctionnement .step__text {
   font-size: 16px;
   font-weight: 500;
 }
@@ -287,150 +283,9 @@ footer ul i {
   gap: 18px;
 }
 
-.restaurant__card {
-  border-radius: 15px;
-  width: 100%;
-  height: 251px;
-  background-color: white;
-}
-.restaurant__card__image {
-  width: 100%;
-  height: 66%;
-  position: relative;
-}
-.restaurant__card__image img {
-  height: 167px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.restaurant__card__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.restaurant__card__content__text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
-  margin-left: 13px;
-  margin-top: 16px;
-  margin-bottom: 12px;
-}
-.restaurant__card__subtitle p {
-  font-size: 17px;
-}
-.restaurant__card__like {
-  margin-right: 25px;
-  margin-top: 23px;
-}
-
-.nouveau {
-  width: 80px;
-  height: 29px;
-  border-radius: 2px;
-  background: #99e2d0;
-  color: #008766;
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 2;
-}
-
 .fa-heart {
   color: black;
   font-size: 21px;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 63px;
-  background-color: white;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-header .fa-arrow-left {
-  position: absolute;
-  top: 17px;
-  left: 17px;
-  font-size: 30px;
-}
-
-.header-logo {
-  padding: 14px 89px 13px 89px;
-  width: 12.25rem;
-  height: 2.25rem;
-}
-
-.banner {
-  width: 100%;
-}
-.banner img {
-  height: 275px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.cta {
-  width: 218px;
-  height: 50px;
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  cursor: pointer;
-}
-
-footer {
-  background-color: #353535;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 22px 25px;
-}
-footer h2 {
-  color: white;
-  font-family: "Shrikhand", serif;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-footer ul {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  align-items: flex-start;
-  color: white;
-  padding-left: 0;
-  list-style: none;
-  font-size: 16px;
-  font-weight: 500;
-}
-footer ul i {
-  font-size: 13px;
-}
-
-.fa-utensils {
-  margin-right: 11px;
-}
-
-.fa-handshake-angle {
-  margin-right: 6px;
 }
 
 .menu {

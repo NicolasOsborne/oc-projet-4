@@ -1,0 +1,47 @@
+@import '../utils/variables';
+
+.restaurant__card {
+  border-radius: 15px;
+  width: 100%;
+  height: 251px;
+  background-color: $white;
+
+  &__image {
+    width: 100%;
+    height: 66%;
+    position: relative;
+
+    img {
+      height: 167px;
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      margin-left: 13px;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__subtitle p {
+    font-size: 17px;
+  }
+
+  &__like {
+    margin-right: 25px;
+    margin-top: 23px;
+  }
+}

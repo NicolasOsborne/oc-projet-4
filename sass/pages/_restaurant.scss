@@ -1,7 +1,5 @@
-@import '../layout/header';
-@import '../components/banner';
-@import '../components/button';
-@import '../layout/footer';
+@import '../utils/mixins';
+@import '../utils/variables';
 
 .menu {
   background-color: $background-grey;

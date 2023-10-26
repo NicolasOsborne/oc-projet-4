@@ -1,0 +1,121 @@
+@import '../layout/header';
+@import '../components/button';
+@import '../layout/footer';
+
+.banner {
+  width: 100%;
+
+  img {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.menu {
+  background-color: $background-grey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: -60px;
+  padding-bottom: 40px;
+}
+
+.restaurant-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 41px 0px 17px;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  background-color: $background-grey;
+
+  h1 {
+    font-family: 'Shrikhand', serif;
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
+.restaurant-like .fa-heart {
+  color: black;
+  font-size: 21px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 17px;
+  gap: 40px;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__title {
+    align-self: flex-start;
+
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    &__underline {
+      width: 40px;
+      height: 3px;
+      background: $third-color;
+      margin-top: 5px;
+    }
+  }
+}
+
+.dish-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 0;
+}
+
+.dish {
+  display: flex;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .dish__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+
+  .dish__price {
+    display: flex;
+    align-items: flex-end;
+
+    p {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}

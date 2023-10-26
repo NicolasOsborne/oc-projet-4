@@ -23,7 +23,7 @@
   height: 20px;
 }
 
-.reservation {
+.hero {
   padding: 40px 0px 57px 0px;
   background-color: $background-grey;
 
@@ -60,7 +60,7 @@
     width: 100%;
     border-radius: 20px;
     background: $background-grey;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    @include step-shadow;
     border: none;
     display: flex;
     flex-direction: row;

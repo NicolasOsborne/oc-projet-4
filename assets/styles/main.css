@@ -373,6 +373,16 @@ header .fa-arrow-left {
   height: 2.25rem;
 }
 
+.banner {
+  width: 100%;
+}
+.banner img {
+  height: 275px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .cta {
   width: 218px;
   height: 50px;
@@ -421,16 +431,6 @@ footer ul i {
 
 .fa-handshake-angle {
   margin-right: 6px;
-}
-
-.banner {
-  width: 100%;
-}
-.banner img {
-  height: 275px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .menu {

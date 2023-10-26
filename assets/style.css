@@ -52,7 +52,7 @@ a {
 }
 
 /** Header **/
-header {
+nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +91,7 @@ header .fa-arrow-left {
   height: 20px;
 }
 
-.location-city {
+.location__city {
   color: var(--footer-dark-grey);
   font-size: 16px;
   font-weight: 500;
@@ -137,7 +137,7 @@ header .fa-arrow-left {
   align-self: flex-start;
 }
 
-.fonctionnement-cards-container {
+.fonctionnement__cards-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -145,7 +145,7 @@ header .fa-arrow-left {
   padding-left: 0;
 }
 
-.fonctionnement-card {
+.fonctionnement__card {
   height: 72px;
   width: 100%;
   border-radius: 20px;
@@ -158,7 +158,7 @@ header .fa-arrow-left {
   gap: 22px;
 }
 
-.fonctionnement-card-number {
+.fonctionnement__card__number {
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -184,7 +184,7 @@ header .fa-arrow-left {
   font-size: 20px;
 }
 
-.fonctionnement-card-text {
+.fonctionnement__card__text {
   font-size: 16px;
   font-weight: 500;
 }
@@ -204,26 +204,26 @@ header .fa-arrow-left {
   margin-left: 3px;
 }
 
-.restaurants-cards-container {
+.restaurants__cards-container {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.restaurant-card {
+.restaurant__card {
   border-radius: 15px;
   width: 100%;
   height: 251px;
   background-color: white;
 }
 
-.restaurant-card-image {
+.restaurant__card__image {
   width: 100%;
   height: 66%;
   position: relative;
 }
 
-.restaurant-card-image img {
+.restaurant__card__image img {
   height: 167px;
   width: 100%;
   object-fit: cover;
@@ -248,13 +248,13 @@ header .fa-arrow-left {
   z-index: 2;
 }
 
-.restaurant-card-content {
+.restaurant__card__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.restaurant-card-content-text {
+.restaurant__card__content__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -264,11 +264,11 @@ header .fa-arrow-left {
   margin-bottom: 12px;
 }
 
-.restaurant-card-subtitle p {
+.restaurant__card__subtitle p {
   font-size: 17px;
 }
 
-.restaurant-card-like {
+.restaurant__card__like {
   margin-right: 25px;
   margin-top: 23px;
 }
@@ -288,7 +288,7 @@ footer {
   padding: 22px 25px;
 }
 
-.footer-logo {
+.footer__logo {
   color: white;
   font-family: 'Shrikhand', serif;
   font-size: 18px;
@@ -296,7 +296,7 @@ footer {
   margin-bottom: 16px;
 }
 
-.footer-menu {
+.footer__menu {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -304,9 +304,11 @@ footer {
   color: white;
   padding-left: 0;
   list-style: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.footer-menu i {
+.footer__menu i {
   font-size: 13px;
 }
 
@@ -316,11 +318,6 @@ footer {
 
 .fa-handshake-angle {
   margin-right: 6px;
-}
-
-.footer-menu-text {
-  font-size: 16px;
-  font-weight: 500;
 }
 
 /******* Page Menu Restaurant *******/
@@ -377,37 +374,37 @@ footer {
   gap: 40px;
 }
 
-.course-countainer {
+.course {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.course-title {
+.course__title {
   align-self: flex-start;
 }
 
-.course-title h2 {
+.course__title h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
 
-.course-title-underline {
+.course__title__underline {
   width: 40px;
   height: 3px;
   background: var(--third-color);
   margin-top: 5px;
 }
 
-.dish-cards-container {
+.dish-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding-left: 0;
 }
 
-.dish-card {
+.dish {
   display: flex;
   border-radius: 15px;
   background: white;
@@ -417,29 +414,29 @@ footer {
   justify-content: space-between;
 }
 
-.dish-text {
+.dish__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
 }
 
-.dish-title {
+.dish__title {
   font-size: 18px;
   font-weight: 500;
 }
 
-.dish-subtitle {
+.dish__subtitle {
   font-size: 15px;
   font-weight: 300;
 }
 
-.dish-price {
+.dish__price {
   display: flex;
   align-items: flex-end;
 }
 
-.dish-price p {
+.dish__price p {
   font-size: 15px;
   font-weight: 700;
 }

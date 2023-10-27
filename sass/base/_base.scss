@@ -1,5 +1,7 @@
+@import '../utils/mixins';
+
 * {
-  font-family: 'Roboto', sans-serif;
+  @include main-font;
   margin: 0;
   text-align: center;
 }

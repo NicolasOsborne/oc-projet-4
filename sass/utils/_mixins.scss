@@ -1,5 +1,17 @@
 @import './variables';
 
+// Fonts
+
+@mixin title-font {
+  font-family: 'Shrikhand', serif;
+}
+
+@mixin main-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Ombres Box-Shadow
+
 @mixin header-shadow {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }

@@ -23,7 +23,7 @@
   background-color: $background-grey;
 
   h1 {
-    font-family: 'Shrikhand', serif;
+    @include title-font;
     font-size: 28px;
     font-weight: 400;
   }
@@ -51,7 +51,6 @@
     align-self: flex-start;
 
     h2 {
-      font-family: 'Roboto', sans-serif;
       font-size: 16px;
       font-weight: 300;
     }

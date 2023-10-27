@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+@import '../utils/mixins';
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  @include main-font;
   font-weight: 700;
   font-size: 24px;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  @include main-font;
   font-weight: 700;
   font-size: 24px;
 }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
+  @include main-font;
   font-size: 18px;
   font-weight: 700;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  @include main-font;
   font-weight: 300;
   font-size: 18px;
 }

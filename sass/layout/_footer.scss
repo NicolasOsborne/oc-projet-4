@@ -10,7 +10,7 @@ footer {
 
   h2 {
     color: $white;
-    font-family: 'Shrikhand', serif;
+    @include title-font;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 16px;

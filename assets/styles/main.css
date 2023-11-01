@@ -128,6 +128,7 @@ a {
   padding: 15px;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
 }
 .dish .dish__text {
   display: flex;

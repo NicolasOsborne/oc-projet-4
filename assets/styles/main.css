@@ -169,6 +169,77 @@ a {
   opacity: 1;
 }
 
+.loader {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(193deg, #9356dc -11.4%, #ff79da 123.93%);
+  animation: loader 3s cubic-bezier(1, 0, 1, 0) forwards;
+}
+.loader__container {
+  position: relative;
+}
+.loader__container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  border: 4px solid white;
+  border-radius: 10px;
+  transition: all 3s;
+  animation: spin 3s infinite linear;
+}
+.loader__container::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  border: 4px solid white;
+  border-radius: 10px;
+  transition: all 3s;
+  animation: spin 3s infinite -1.5s linear;
+}
+.loader .logo {
+  font-family: "Shrikhand", serif;
+  color: white;
+  font-size: 30px;
+}
+
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes spin {
+  0%, 100% {
+    -webkit-clip-path: inset(90% 0 0 0);
+            clip-path: inset(90% 0 0 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 90% 0 0);
+            clip-path: inset(0 90% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(0 0 90% 0);
+            clip-path: inset(0 0 90% 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 0 90%);
+            clip-path: inset(0 0 0 90%);
+  }
+}
 nav {
   display: flex;
   flex-direction: column;

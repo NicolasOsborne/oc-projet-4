@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 41px 0px 17px;
+  padding: 32px 0 0px 17px;
   border-radius: 25px 25px 0 0;
   position: relative;
   background-color: $background-grey;
@@ -27,11 +27,13 @@
     font-size: 28px;
     font-weight: 400;
   }
-}
 
-.restaurant-like .fa-heart {
-  color: $black;
-  font-size: 21px;
+  i {
+    position: absolute;
+    top: 40px;
+    right: 41px;
+    font-size: 22px;
+  }
 }
 
 .menu-container {

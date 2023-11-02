@@ -3,14 +3,27 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 17px;
+  gap: 1rem;
   background-color: $second-background-grey;
   height: 50px;
 
   &__city {
+    background-color: $second-background-grey;
     color: $footer-dark-grey;
     font-size: 16px;
     font-weight: 500;
+    border: none;
+    padding: 0;
+    width: 8rem;
+
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $footer-dark-grey;
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 }
 

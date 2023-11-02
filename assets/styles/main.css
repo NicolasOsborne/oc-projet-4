@@ -183,7 +183,7 @@ a {
 .loader__container {
   position: relative;
 }
-.loader__container::before {
+.loader__container::before, .loader__container::after {
   content: "";
   position: absolute;
   top: -20px;
@@ -196,15 +196,6 @@ a {
   animation: spin 3s infinite linear;
 }
 .loader__container::after {
-  content: "";
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  bottom: -20px;
-  left: -20px;
-  border: 4px solid white;
-  border-radius: 10px;
-  transition: all 3s;
   animation: spin 3s infinite -1.5s linear;
 }
 .loader .logo {
@@ -249,18 +240,16 @@ nav {
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
-header .fa-arrow-left {
+nav .header-logo {
+  align-self: center;
+  width: 12.25rem;
+  height: 2.25rem;
+}
+nav .fa-arrow-left {
   position: absolute;
   top: 17px;
   left: 17px;
   font-size: 30px;
-}
-
-.header-logo {
-  padding: 14px 89px 13px 89px;
-  width: 12.25rem;
-  height: 2.25rem;
 }
 
 footer {

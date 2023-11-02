@@ -9,17 +9,17 @@ nav {
   height: 63px;
   background-color: $white;
   @include header-shadow;
-}
 
-header .fa-arrow-left {
-  position: absolute;
-  top: 17px;
-  left: 17px;
-  font-size: 30px;
-}
+  .header-logo {
+    align-self: center;
+    width: 12.25rem;
+    height: 2.25rem;
+  }
 
-.header-logo {
-  padding: 14px 89px 13px 89px;
-  width: 12.25rem;
-  height: 2.25rem;
+  .fa-arrow-left {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    font-size: 30px;
+  }
 }

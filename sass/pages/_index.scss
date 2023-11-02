@@ -34,20 +34,20 @@
 }
 
 .hero {
-  padding: 40px 0px 57px 0px;
+  padding: 2.5rem 0 3.5rem 0;
   background-color: $background-grey;
 
   h1 {
-    padding: 0px 50px 15px 50px;
+    padding: 0 3rem 1rem 3rem;
   }
 
   p {
-    padding-bottom: 27px;
+    padding-bottom: 1.7rem;
   }
 }
 
 .fonctionnement {
-  padding: 48px 20px 68px 20px;
+  padding: 3rem 1.25rem 4.25rem 1.25rem;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -60,13 +60,13 @@
   .steps__container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    margin-left: 12px;
+    gap: 1.5rem;
+    margin-left: 0.75rem;
     padding-left: 0;
   }
 
   .step {
-    height: 72px;
+    height: 4.5rem;
     width: 100%;
     border-radius: 20px;
     background: $background-grey;
@@ -75,21 +75,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 22px;
+    gap: 1.3rem;
 
     &__number {
       color: $white;
       font-size: 14px;
       font-weight: 500;
       background-color: $primary-color;
-      width: 24px;
-      height: 24px;
+      width: 1.5rem;
+      height: 1.5rem;
       border-radius: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
-      left: -12px;
+      left: -0.75rem;
     }
 
     &__text {
@@ -114,17 +114,17 @@
   display: flex;
   flex-direction: column;
   background-color: $background-grey;
-  padding: 54px 17px 66px 17px;
+  padding: 3.3rem 1rem 4rem 1rem;
   gap: 20px;
 
   h2 {
     align-self: flex-start;
-    margin-left: 3px;
+    margin-left: 0.2rem;
   }
 
   &__cards-container {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 1.125rem;
   }
 }

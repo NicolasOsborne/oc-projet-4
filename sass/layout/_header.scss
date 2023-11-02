@@ -3,7 +3,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 63px;
+  height: 4rem;
   background-color: $white;
   @include header-shadow;
 
@@ -15,8 +15,8 @@ nav {
 
   .fa-arrow-left {
     position: absolute;
-    top: 17px;
-    left: 17px;
+    top: 1.1rem;
+    left: 1.7rem;
     font-size: 30px;
   }
 }

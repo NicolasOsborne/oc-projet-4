@@ -3,20 +3,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 22px 25px;
+  padding: 1.4rem 1.6rem;
 
   h2 {
     color: $white;
     @include title-font;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   ul {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 0.4rem;
     align-items: flex-start;
     color: $white;
     padding-left: 0;
@@ -31,9 +31,9 @@ footer {
 }
 
 .fa-utensils {
-  margin-right: 11px;
+  margin-right: 0.7rem;
 }
 
 .fa-handshake-angle {
-  margin-right: 6px;
+  margin-right: 0.4rem;
 }

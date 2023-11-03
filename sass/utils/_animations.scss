@@ -1,0 +1,15 @@
+// Dish slide-in animation
+
+$slide-in-duration: 1000ms;
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(600%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// Dish check-mark animation

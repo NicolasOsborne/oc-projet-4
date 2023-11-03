@@ -3,7 +3,7 @@
   border-radius: 15px;
   background: $white;
   @include dish-shadow;
-  padding: 1rem;
+  overflow: hidden;
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.3rem;
+    padding: 1rem;
 
     h3 {
       font-size: 18px;
@@ -28,10 +29,41 @@
   .dish__price {
     display: flex;
     align-items: flex-end;
+    transform: translateX(4rem);
+    transition: all 400ms ease-in-out;
 
     p {
       font-size: 15px;
       font-weight: 700;
+      margin: 0 1rem 1rem 0;
+    }
+
+    .check-mark {
+      background-color: $third-color;
+      width: 4rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 15px 15px 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: all 400ms ease-in-out;
+
+      i {
+        color: $white;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &:hover {
+    .dish__price {
+      transform: translateX(0);
+    }
+
+    .check-mark {
+      transform: scaleX(1);
     }
   }
 }

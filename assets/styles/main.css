@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
-@keyframes slide-in {
-  0% {
-    transform: translateX(600%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -155,10 +147,12 @@ a {
 .dish .dish__text h3 {
   font-size: 18px;
   font-weight: 500;
+  text-align: left;
 }
 .dish .dish__text p {
   font-size: 15px;
   font-weight: 300;
+  text-align: left;
 }
 .dish .dish__price {
   display: flex;
@@ -497,6 +491,14 @@ footer ul i {
   gap: 2.5rem;
 }
 
+@keyframes slide-in {
+  0% {
+    transform: translateX(600%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .course {
   display: flex;
   flex-direction: column;

@@ -40,6 +40,18 @@
   gap: 2.5rem;
 }
 
+$slide-in-duration: 1000ms;
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(600%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .course {
   display: flex;
   flex-direction: column;

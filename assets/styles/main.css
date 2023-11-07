@@ -317,6 +317,11 @@ nav .fa-arrow-left {
   left: 1.7rem;
   font-size: 30px;
 }
+@media only screen and (min-width: 1024px) {
+  nav .fa-arrow-left {
+    top: 2.1rem;
+  }
+}
 
 footer {
   background-color: #353535;

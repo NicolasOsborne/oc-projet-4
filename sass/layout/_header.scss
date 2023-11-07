@@ -26,5 +26,9 @@ nav {
     top: 1.1rem;
     left: 1.7rem;
     font-size: 30px;
+
+    @include desktop {
+      top: 2.1rem;
+    }
   }
 }

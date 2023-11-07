@@ -530,6 +530,12 @@ footer ul i {
   margin-top: -3.75rem;
   padding-bottom: 2.5rem;
 }
+@media only screen and (min-width: 1024px) {
+  .menu {
+    width: 75%;
+    margin: -3.75rem auto 0 auto;
+  }
+}
 
 .restaurant-name {
   display: flex;
@@ -540,6 +546,12 @@ footer ul i {
   border-radius: 25px 25px 0 0;
   position: relative;
   background-color: #f6f6f6;
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant-name {
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
 }
 .restaurant-name h1 {
   font-family: "Shrikhand", serif;
@@ -552,6 +564,12 @@ footer ul i {
   right: 2.5rem;
   font-size: 22px;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurant-name i {
+    margin-right: 26%;
+    right: 0;
+  }
+}
 
 .menu-container {
   display: flex;
@@ -559,6 +577,13 @@ footer ul i {
   justify-content: center;
   padding: 0 1rem;
   gap: 2.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .menu-container {
+    width: 60%;
+    align-content: center;
+    margin: auto;
+  }
 }
 
 @keyframes slide-in {

@@ -42,4 +42,8 @@
       bottom: 2rem;
     }
   }
+
+  @include desktop {
+    width: 40%;
+  }
 }

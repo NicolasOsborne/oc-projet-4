@@ -3,6 +3,7 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -125,6 +126,11 @@ a {
   position: absolute;
   right: 1.5rem;
   bottom: 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant__card {
+    width: 40%;
+  }
 }
 
 .dish {
@@ -313,7 +319,6 @@ footer h2 {
   font-family: "Shrikhand", serif;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 1rem;
 }
 footer ul {
   display: flex;
@@ -325,9 +330,24 @@ footer ul {
   list-style: none;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 1024px) {
+  footer ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
 }
 footer ul i {
   font-size: 13px;
+}
+@media only screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 5rem;
+    padding: 3rem 4rem 2rem 0;
+  }
 }
 
 .fa-utensils {
@@ -392,10 +412,20 @@ footer ul i {
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 1.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .fonctionnement {
+    justify-content: center;
+  }
 }
 .fonctionnement h2 {
   align-self: flex-start;
+}
+@media only screen and (min-width: 1024px) {
+  .fonctionnement h2 {
+    margin-left: 5%;
+  }
 }
 .fonctionnement .steps__container {
   display: flex;
@@ -403,6 +433,14 @@ footer ul i {
   gap: 1.5rem;
   margin-left: 0.75rem;
   padding-left: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .fonctionnement .steps__container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
 }
 .fonctionnement .step {
   height: 4.5rem;
@@ -434,6 +472,11 @@ footer ul i {
   font-size: 16px;
   font-weight: 500;
 }
+@media only screen and (min-width: 1024px) {
+  .fonctionnement .step {
+    width: 29%;
+  }
+}
 
 .fa-mobile-screen-button,
 .fa-list-ul {
@@ -451,16 +494,31 @@ footer ul i {
   flex-direction: column;
   background-color: #f6f6f6;
   padding: 3.3rem 1rem 4rem 1rem;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .restaurants h2 {
   align-self: flex-start;
   margin-left: 0.2rem;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants h2 {
+    margin-left: 5%;
+  }
+}
 .restaurants__cards-container {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
+}
+@media only screen and (min-width: 1024px) {
+  .restaurants__cards-container {
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 3rem;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
 }
 
 .menu {

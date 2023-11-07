@@ -71,6 +71,12 @@
   &:hover {
     .dish__text {
       width: 60%;
+      @include tablet {
+        width: 80%;
+      }
+      @include desktop {
+        width: 80%;
+      }
     }
 
     .dish__price {

@@ -199,6 +199,16 @@ a {
 .dish:hover .dish__text {
   width: 60%;
 }
+@media only screen and (min-width: 768px) {
+  .dish:hover .dish__text {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .dish:hover .dish__text {
+    width: 80%;
+  }
+}
 .dish:hover .dish__price {
   transform: translateX(0);
 }

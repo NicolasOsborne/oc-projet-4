@@ -332,6 +332,12 @@ footer ul {
   font-weight: 500;
   margin-top: 1rem;
 }
+@media only screen and (min-width: 768px) {
+  footer ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
 @media only screen and (min-width: 1024px) {
   footer ul {
     flex-direction: row;
@@ -414,6 +420,12 @@ footer ul i {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media only screen and (min-width: 768px) {
+  .fonctionnement {
+    width: 85%;
+    margin: 0 auto 0 auto;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .fonctionnement {
     justify-content: center;
@@ -424,7 +436,7 @@ footer ul i {
 }
 @media only screen and (min-width: 1024px) {
   .fonctionnement h2 {
-    margin-left: 5%;
+    margin-left: 6%;
   }
 }
 .fonctionnement .steps__container {
@@ -474,7 +486,7 @@ footer ul i {
 }
 @media only screen and (min-width: 1024px) {
   .fonctionnement .step {
-    width: 29%;
+    width: 28%;
   }
 }
 
@@ -496,13 +508,23 @@ footer ul i {
   padding: 3.3rem 1rem 4rem 1rem;
   gap: 1.25rem;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 10%;
+  }
+}
 .restaurants h2 {
   align-self: flex-start;
   margin-left: 0.2rem;
 }
+@media only screen and (min-width: 768px) {
+  .restaurants h2 {
+    margin-left: 8%;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .restaurants h2 {
-    margin-left: 5%;
+    margin-left: 6%;
   }
 }
 .restaurants__cards-container {
@@ -510,14 +532,18 @@ footer ul i {
   flex-direction: column;
   gap: 1.125rem;
 }
+@media only screen and (min-width: 768px) {
+  .restaurants__cards-container {
+    width: 85%;
+    margin: 0 auto 0 auto;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .restaurants__cards-container {
     flex-wrap: wrap;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     row-gap: 3rem;
-    -moz-column-gap: 6rem;
-         column-gap: 6rem;
   }
 }
 
@@ -529,6 +555,12 @@ footer ul i {
   gap: 2.5rem;
   margin-top: -3.75rem;
   padding-bottom: 2.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .menu {
+    width: 80%;
+    margin: -3.75rem auto 0 auto;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .menu {
@@ -547,6 +579,11 @@ footer ul i {
   position: relative;
   background-color: #f6f6f6;
 }
+@media only screen and (min-width: 768px) {
+  .restaurant-name {
+    justify-content: space-around;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .restaurant-name {
     justify-content: space-around;
@@ -564,6 +601,11 @@ footer ul i {
   right: 2.5rem;
   font-size: 22px;
 }
+@media only screen and (min-width: 768px) {
+  .restaurant-name i {
+    margin-right: 10%;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .restaurant-name i {
     margin-right: 26%;
@@ -577,6 +619,12 @@ footer ul i {
   justify-content: center;
   padding: 0 1rem;
   gap: 2.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    width: 80%;
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .menu-container {

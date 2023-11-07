@@ -24,6 +24,11 @@ footer {
     font-weight: 500;
     margin-top: 1rem;
 
+    @include tablet {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+
     @include desktop {
       flex-direction: row;
       gap: 1.5rem;

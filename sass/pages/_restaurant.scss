@@ -7,6 +7,11 @@
   margin-top: -3.75rem;
   padding-bottom: 2.5rem;
 
+  @include tablet {
+    width: 80%;
+    margin: -3.75rem auto 0 auto;
+  }
+
   @include desktop {
     width: 75%;
     margin: -3.75rem auto 0 auto;
@@ -22,6 +27,10 @@
   border-radius: 25px 25px 0 0;
   position: relative;
   background-color: $background-grey;
+
+  @include tablet {
+    justify-content: space-around;
+  }
 
   @include desktop {
     justify-content: space-around;
@@ -40,6 +49,10 @@
     right: 2.5rem;
     font-size: 22px;
 
+    @include tablet {
+      margin-right: 10%;
+    }
+
     @include desktop {
       margin-right: 26%;
       right: 0;
@@ -53,6 +66,11 @@
   justify-content: center;
   padding: 0 1rem;
   gap: 2.5rem;
+
+  @include tablet {
+    width: 80%;
+    margin: auto;
+  }
 
   @include desktop {
     width: 60%;

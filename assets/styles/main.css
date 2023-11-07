@@ -136,29 +136,38 @@ a {
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
+  position: relative;
 }
 .dish .dish__text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.3rem;
+  display: block;
   padding: 1rem;
+  overflow: hidden;
 }
 .dish .dish__text h3 {
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 0.3rem;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .dish .dish__text p {
   font-size: 15px;
   font-weight: 300;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .dish .dish__price {
   display: flex;
   align-items: flex-end;
   transform: translateX(4rem);
   transition: all 400ms ease-in-out;
+  position: absolute;
+  right: 0;
+  height: 100%;
 }
 .dish .dish__price p {
   font-size: 15px;
@@ -180,6 +189,9 @@ a {
 .dish .dish__price .check-mark i {
   color: white;
   font-size: 20px;
+}
+.dish:hover .dish__text {
+  width: 60%;
 }
 .dish:hover .dish__price {
   transform: translateX(0);

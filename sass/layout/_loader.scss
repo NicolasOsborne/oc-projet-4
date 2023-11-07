@@ -11,7 +11,7 @@
     $primary-color -11.4%,
     $secondary-color 123.93%
   );
-  animation: loader 3s cubic-bezier(1, 0, 1, 0) forwards;
+  animation: loader 1500ms cubic-bezier(1, 0, 1, 0) forwards;
 
   &__container {
     position: relative;
@@ -26,11 +26,11 @@
       left: -20px;
       border: 4px solid $white;
       border-radius: 10px;
-      transition: all 3s;
-      animation: spin 3s infinite linear;
+      transition: all 1500ms;
+      animation: spin 1500ms infinite linear;
     }
     &::after {
-      animation: spin 3s infinite -1.5s linear;
+      animation: spin 1500ms infinite -750ms linear;
     }
   }
 

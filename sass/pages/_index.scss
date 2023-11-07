@@ -39,6 +39,9 @@
 
   h1 {
     padding: 0 3rem 1rem 3rem;
+    @include desktop {
+      font-size: 40px;
+    }
   }
 
   p {
@@ -59,14 +62,14 @@
   }
 
   @include desktop {
-    width: 95%;
+    width: 92%;
     justify-content: center;
   }
 
   h2 {
     align-self: flex-start;
     @include desktop {
-      margin-left: 4%;
+      margin-left: 1.75rem;
     }
   }
 
@@ -150,7 +153,7 @@
     }
 
     @include desktop {
-      margin-left: 7%;
+      margin-left: 7.5%;
     }
   }
 

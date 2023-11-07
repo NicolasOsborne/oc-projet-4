@@ -6,11 +6,19 @@ nav {
   height: 4rem;
   background-color: $white;
   @include header-shadow;
+  @include desktop {
+    height: 6rem;
+  }
 
   .header-logo {
     align-self: center;
     width: 12.25rem;
     height: 2.25rem;
+
+    @include desktop {
+      width: 12.5rem;
+      height: 3rem;
+    }
   }
 
   .fa-arrow-left {

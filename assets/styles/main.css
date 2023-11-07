@@ -129,7 +129,7 @@ a {
 }
 @media only screen and (min-width: 1024px) {
   .restaurant__card {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -428,6 +428,7 @@ footer ul i {
 }
 @media only screen and (min-width: 1024px) {
   .fonctionnement {
+    width: 95%;
     justify-content: center;
   }
 }
@@ -436,7 +437,7 @@ footer ul i {
 }
 @media only screen and (min-width: 1024px) {
   .fonctionnement h2 {
-    margin-left: 6%;
+    margin-left: 3%;
   }
 }
 .fonctionnement .steps__container {
@@ -486,7 +487,7 @@ footer ul i {
 }
 @media only screen and (min-width: 1024px) {
   .fonctionnement .step {
-    width: 28%;
+    width: 30%;
   }
 }
 
@@ -507,11 +508,6 @@ footer ul i {
   background-color: #f6f6f6;
   padding: 3.3rem 1rem 4rem 1rem;
   gap: 1.25rem;
-}
-@media only screen and (min-width: 1024px) {
-  .restaurants {
-    padding: 10%;
-  }
 }
 .restaurants h2 {
   align-self: flex-start;

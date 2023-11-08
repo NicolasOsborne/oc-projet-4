@@ -132,6 +132,11 @@ a {
     width: 45%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .restaurant__card {
+    width: 45%;
+  }
+}
 
 .dish {
   display: flex;
@@ -563,6 +568,10 @@ footer ul i {
   .restaurants__cards-container {
     width: 85%;
     margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 3rem;
   }
 }
 @media only screen and (min-width: 1024px) {

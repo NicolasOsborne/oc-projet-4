@@ -1,0 +1,27 @@
+// Fonts
+
+@mixin title-font {
+  font-family: 'Shrikhand', serif;
+}
+
+@mixin main-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Ombres Box-Shadow
+
+@mixin header-shadow {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin button-shadow {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@mixin step-shadow {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin dish-shadow {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}

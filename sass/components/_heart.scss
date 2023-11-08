@@ -1,0 +1,16 @@
+.heart-empty {
+  color: $black;
+  cursor: pointer;
+}
+
+.heart-full {
+  color: transparent;
+  background-image: linear-gradient(to top, $secondary-color, $primary-color);
+  background-clip: text;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,143 @@
+.menu {
+  background-color: $background-grey;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: -3.75rem;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
+
+  @include tablet {
+    width: 80%;
+    margin: -3.75rem auto 0 auto;
+  }
+
+  @include desktop {
+    width: 75%;
+    margin: -3.75rem auto 0 auto;
+  }
+}
+
+.restaurant-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 0 1rem;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  background-color: $background-grey;
+
+  @include tablet {
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  h1 {
+    @include title-font;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  i {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 22px;
+
+    @include tablet {
+      margin-right: 10%;
+    }
+
+    @include desktop {
+      margin-right: 26%;
+      right: 0;
+    }
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  gap: 2.5rem;
+
+  @include tablet {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include desktop {
+    width: 60%;
+    align-content: center;
+    margin: auto;
+  }
+}
+
+$slide-in-duration: 1000ms;
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &__title {
+    align-self: flex-start;
+    animation: slide-in $slide-in-duration 1000ms;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    &__underline {
+      width: 2.5rem;
+      height: 0.2rem;
+      background: $third-color;
+      margin-top: 0.3rem;
+    }
+  }
+}
+
+.dish-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 0;
+
+  .dish {
+    animation: slide-in $slide-in-duration;
+    animation-fill-mode: backwards;
+
+    &:nth-child(1) {
+      animation-delay: 1500ms;
+    }
+    &:nth-child(2) {
+      animation-delay: 1700ms;
+    }
+    &:nth-child(3) {
+      animation-delay: 1900ms;
+    }
+    &:nth-child(4) {
+      animation-delay: 2000ms;
+    }
+  }
+}

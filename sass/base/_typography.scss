@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+
+h1 {
+  @include main-font;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h2 {
+  @include main-font;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3 {
+  @include main-font;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  @include main-font;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

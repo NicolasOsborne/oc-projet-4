@@ -1,0 +1,90 @@
+.dish {
+  display: flex;
+  border-radius: 15px;
+  background: $white;
+  @include dish-shadow;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+
+  .dish__text {
+    display: block;
+    padding: 1rem;
+    overflow: hidden;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .dish__price {
+    display: flex;
+    align-items: flex-end;
+    transform: translateX(4rem);
+    transition: all 400ms ease-in-out;
+    position: absolute;
+    right: 0;
+    height: 100%;
+
+    p {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 1rem 1rem 0;
+    }
+
+    .check-mark {
+      background-color: $third-color;
+      width: 4rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 15px 15px 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: all 400ms ease-in-out;
+
+      i {
+        color: $white;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &:hover {
+    .dish__text {
+      width: 60%;
+      @include tablet {
+        width: 80%;
+      }
+      @include desktop {
+        width: 80%;
+      }
+    }
+
+    .dish__price {
+      transform: translateX(0);
+    }
+
+    .check-mark {
+      transform: scaleX(1);
+    }
+  }
+}

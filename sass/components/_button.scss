@@ -1,0 +1,30 @@
+.cta,
+.cta-homepage {
+  background: linear-gradient(
+    0deg,
+    $primary-color -11.4%,
+    $secondary-color 123.93%
+  );
+  border: none;
+  color: $white;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 350ms, box-shadow 350ms;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.cta-homepage {
+  padding: 1rem 1.5rem;
+}
+
+.cta {
+  padding: 1rem 3rem;
+}

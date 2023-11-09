@@ -9,25 +9,25 @@
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 a {
@@ -54,7 +54,7 @@ a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: opacity 350ms, box-shadow 350ms;
 }
@@ -78,7 +78,7 @@ a {
   border-radius: 2px;
   background: #99e2d0;
   color: #008766;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -115,14 +115,13 @@ a {
   margin: 1rem 0 0.7rem 1rem;
 }
 .restaurant__card__content h3 {
-  font-size: 18px;
   margin-bottom: 0.3rem;
 }
 .restaurant__card__content p {
   font-size: 17px;
 }
 .restaurant__card__like i {
-  font-size: 22px;
+  font-size: 1.375rem;
   position: absolute;
   right: 1.5rem;
   bottom: 2rem;
@@ -155,7 +154,6 @@ a {
   overflow: hidden;
 }
 .dish .dish__text h3 {
-  font-size: 18px;
   font-weight: 500;
   margin-bottom: 0.3rem;
   text-align: left;
@@ -271,7 +269,7 @@ a {
 .loader .logo {
   font-family: "Shrikhand", serif;
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 @keyframes loader {
@@ -330,7 +328,7 @@ nav .fa-arrow-left {
   position: absolute;
   top: 1.1rem;
   left: 1.7rem;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 @media only screen and (min-width: 1024px) {
   nav .fa-arrow-left {
@@ -348,7 +346,7 @@ footer {
 footer h2 {
   color: white;
   font-family: "Shrikhand", serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 footer ul {
@@ -359,9 +357,12 @@ footer ul {
   color: white;
   padding-left: 0;
   list-style: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   margin-top: 1rem;
+}
+footer ul i {
+  font-size: 13px;
 }
 @media only screen and (min-width: 768px) {
   footer ul {
@@ -375,8 +376,21 @@ footer ul {
     gap: 1.5rem;
   }
 }
-footer ul i {
-  font-size: 13px;
+@media only screen and (min-width: 768px) {
+  footer ul li:nth-child(3) {
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer ul li:nth-child(3) {
+    margin-left: 2rem;
+    font-weight: 400;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer ul li:nth-child(4) {
+    font-weight: 400;
+  }
 }
 @media only screen and (min-width: 1024px) {
   footer {
@@ -407,7 +421,7 @@ footer ul i {
 .location__city {
   background-color: #eaeaea;
   color: #353535;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   border: none;
   padding: 0;
@@ -418,12 +432,12 @@ footer ul i {
 }
 .location__city::-moz-placeholder {
   color: #353535;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .location__city::placeholder {
   color: #353535;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -437,12 +451,17 @@ footer ul i {
   padding: 2.5rem 0 3.5rem 0;
   background-color: #f6f6f6;
 }
+@media only screen and (min-width: 1024px) {
+  .hero {
+    padding: 2rem 0 2rem 0;
+  }
+}
 .hero h1 {
   padding: 0 3rem 1rem 3rem;
 }
 @media only screen and (min-width: 1024px) {
   .hero h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 .hero p {
@@ -458,23 +477,18 @@ footer ul i {
 }
 @media only screen and (min-width: 768px) {
   .fonctionnement {
-    width: 85%;
+    width: 75%;
     margin: 0 auto 0 auto;
   }
 }
 @media only screen and (min-width: 1024px) {
   .fonctionnement {
-    width: 92%;
-    justify-content: center;
+    width: 80%;
+    padding: 3rem 0 3rem 0;
   }
 }
 .fonctionnement h2 {
   align-self: flex-start;
-}
-@media only screen and (min-width: 1024px) {
-  .fonctionnement h2 {
-    margin-left: 1.75rem;
-  }
 }
 .fonctionnement .steps__container {
   display: flex;
@@ -487,8 +501,7 @@ footer ul i {
   .fonctionnement .steps__container {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .fonctionnement .step {
@@ -505,7 +518,7 @@ footer ul i {
 }
 .fonctionnement .step__number {
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   background-color: #9356dc;
   width: 1.5rem;
@@ -518,24 +531,25 @@ footer ul i {
   left: -0.75rem;
 }
 .fonctionnement .step__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 @media only screen and (min-width: 1024px) {
   .fonctionnement .step {
-    width: 30%;
+    width: 35%;
+    gap: 1rem;
   }
 }
 
 .fa-mobile-screen-button,
 .fa-list-ul {
   color: #7e7e7e;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .fa-store {
   color: #9356dc;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .restaurants {
@@ -545,18 +559,29 @@ footer ul i {
   padding: 3.3rem 1rem 4rem 1rem;
   gap: 1.25rem;
 }
+@media only screen and (min-width: 768px) {
+  .restaurants {
+    padding: 3rem 0 3rem 0;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 2rem 0 2rem 0;
+    align-items: center;
+  }
+}
 .restaurants h2 {
   align-self: flex-start;
-  margin-left: 0.2rem;
 }
 @media only screen and (min-width: 768px) {
   .restaurants h2 {
-    margin-left: 8%;
+    margin-left: 12.5%;
   }
 }
 @media only screen and (min-width: 1024px) {
   .restaurants h2 {
-    margin-left: 7.5%;
+    margin-left: 10%;
   }
 }
 .restaurants__cards-container {
@@ -566,8 +591,7 @@ footer ul i {
 }
 @media only screen and (min-width: 768px) {
   .restaurants__cards-container {
-    width: 85%;
-    margin: 0 auto 0 auto;
+    width: 75%;
     flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -576,6 +600,7 @@ footer ul i {
 }
 @media only screen and (min-width: 1024px) {
   .restaurants__cards-container {
+    width: 80%;
     flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -595,7 +620,7 @@ footer ul i {
 }
 @media only screen and (min-width: 768px) {
   .menu {
-    width: 80%;
+    width: 75%;
     margin: -3.75rem auto 0 auto;
   }
 }
@@ -609,7 +634,6 @@ footer ul i {
 .restaurant-name {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 2rem 0 0 1rem;
   border-radius: 25px 25px 0 0;
@@ -618,35 +642,35 @@ footer ul i {
 }
 @media only screen and (min-width: 768px) {
   .restaurant-name {
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 1024px) {
   .restaurant-name {
-    justify-content: space-around;
-    gap: 1.5rem;
+    justify-content: center;
   }
 }
 .restaurant-name h1 {
   font-family: "Shrikhand", serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
 }
 .restaurant-name i {
   position: absolute;
   top: 2.5rem;
   right: 2.5rem;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 @media only screen and (min-width: 768px) {
   .restaurant-name i {
-    margin-right: 10%;
+    right: 0;
+    left: 22rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .restaurant-name i {
-    margin-right: 26%;
     right: 0;
+    left: 22rem;
   }
 }
 
@@ -659,14 +683,13 @@ footer ul i {
 }
 @media only screen and (min-width: 768px) {
   .menu-container {
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
 }
 @media only screen and (min-width: 1024px) {
   .menu-container {
     width: 60%;
-    align-content: center;
     margin: auto;
   }
 }
@@ -691,7 +714,7 @@ footer ul i {
   animation: slide-in 1000ms 1000ms;
 }
 .course__title h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 }
 .course__title__underline {

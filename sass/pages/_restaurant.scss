@@ -9,7 +9,7 @@
   overflow: hidden;
 
   @include tablet {
-    width: 80%;
+    width: 75%;
     margin: -3.75rem auto 0 auto;
   }
 
@@ -22,7 +22,6 @@
 .restaurant-name {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 2rem 0 0 1rem;
   border-radius: 25px 25px 0 0;
@@ -30,17 +29,16 @@
   background-color: $background-grey;
 
   @include tablet {
-    justify-content: space-around;
+    justify-content: center;
   }
 
   @include desktop {
-    justify-content: space-around;
-    gap: 1.5rem;
+    justify-content: center;
   }
 
   h1 {
     @include title-font;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 400;
   }
 
@@ -48,15 +46,16 @@
     position: absolute;
     top: 2.5rem;
     right: 2.5rem;
-    font-size: 22px;
+    font-size: 1.375rem;
 
     @include tablet {
-      margin-right: 10%;
+      right: 0;
+      left: 22rem;
     }
 
     @include desktop {
-      margin-right: 26%;
       right: 0;
+      left: 22rem;
     }
   }
 }
@@ -69,13 +68,12 @@
   gap: 2.5rem;
 
   @include tablet {
-    width: 80%;
+    width: 75%;
     margin: auto;
   }
 
   @include desktop {
     width: 60%;
-    align-content: center;
     margin: auto;
   }
 }
@@ -104,7 +102,7 @@ $slide-in-duration: 1000ms;
     animation: slide-in $slide-in-duration 1000ms;
 
     h2 {
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 300;
     }
 

@@ -8,7 +8,7 @@ footer {
   h2 {
     color: $white;
     @include title-font;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
   }
 
@@ -20,9 +20,13 @@ footer {
     color: $white;
     padding-left: 0;
     list-style: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     margin-top: 1rem;
+
+    i {
+      font-size: 13px;
+    }
 
     @include tablet {
       flex-direction: row;
@@ -33,10 +37,23 @@ footer {
       flex-direction: row;
       gap: 1.5rem;
     }
-  }
 
-  ul i {
-    font-size: 13px;
+    li {
+      &:nth-child(3) {
+        @include tablet {
+          margin-left: 2rem;
+        }
+        @include desktop {
+          margin-left: 2rem;
+          font-weight: 400;
+        }
+      }
+      &:nth-child(4) {
+        @include desktop {
+          font-weight: 400;
+        }
+      }
+    }
   }
 
   @include desktop {

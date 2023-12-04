@@ -7,6 +7,7 @@
   );
   border: none;
   color: $white;
+  @include button-shadow;
   border-radius: 25px;
   text-align: center;
   text-decoration: none;
